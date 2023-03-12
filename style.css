@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #cafdff;
+}
+
+header {
+    background-color: #eadcff;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px); /* altrimenti 100% più il 70px che c'era nel nav avrebbe fatto la sezione più lunga del dovuto, appena scrollo anche di un solo pixel voglio vedere spuntare subito la sezione successiva.  */
+    
+}
+
+a { /* Si riferisce alle anchor tag (i link) */
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+button {
+    background-color: #05c7cf;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 24px; /* essendo content, aumenta anche questo la dimensione del bottone */
+    cursor: pointer; /* fa cambiare il puntatore del mouse quando lo porti sopra con una manina */
+}
+
+img {
+    width: 100%; /* per fare in modo che riempano in larghezza tutto l'elemento HTML che le contiene */
+}
+
+#about {
+    background-color: #f8ffdc;
+}
+
+#discord {
+    background-color: #cefeff;
+}
+
+#contact {
+    background-color: #dce9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about,
+#discord,
+#contact,
+footer { /* asterisco in quanto ID e non class */
+    padding: 48px 0;
+}
+
+.logo {
+    width: 300px;
+}
+
+.subheader {
+    font-size: 36px;
+    margin: 16px 0 24px 0;
+}
+
+.row {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img-wrapper {
+    width: 40%;
+}
+
+.section-description-wrapper {
+    width: 60%;
+}
+
+.about-img-wrapper,
+.section-description-wrapper {
+    padding: 0 24px;
+}
+
+
+.section-description-para {
+    font-size: 20px;
+    line-height: 1.5; /* spazio tra le righe x 1.5 */
+    margin-bottom: 24px;
+
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* in modo che ogni elemento occupi un intera riga */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    max-width: 480px;
+    margin-bottom: 16px;
+}
+
+.footer__links {
+    margin-bottom: 32px;
+}
+
+.footer__link {
+    padding: 0 16px;
+}
