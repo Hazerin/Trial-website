@@ -7,38 +7,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
-nav {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    background-color: #cafdff;
-}
-
-header {
-    background-color: #eadcff;
-    padding: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 70px); /* altrimenti 100% più il 70px che c'era nel nav avrebbe fatto la sezione più lunga del dovuto, appena scrollo anche di un solo pixel voglio vedere spuntare subito la sezione successiva.  */
-    
-}
+/* Utilità generale */
 
 a { /* Si riferisce alle anchor tag (i link) */
     color: black;
     font-size: 24px;
     font-weight: 700;
-}
-
-ul {
-    display: flex;
-    align-items: center;
-}
-
-li {
-    list-style-type: none;
-    padding-left: 16px;
 }
 
 h1 {
@@ -64,35 +38,11 @@ img {
     width: 100%; /* per fare in modo che riempano in larghezza tutto l'elemento HTML che le contiene */
 }
 
-#about {
-    background-color: #f8ffdc;
-}
-
-#discord {
-    background-color: #cefeff;
-}
-
-#contact {
-    background-color: #dce9ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #about,
 #discord,
 #contact,
 footer { /* asterisco in quanto ID e non class */
     padding: 48px 0;
-}
-
-.logo {
-    width: 300px;
-}
-
-.subheader {
-    font-size: 36px;
-    margin: 16px 0 24px 0;
 }
 
 .row {
@@ -104,18 +54,45 @@ footer { /* asterisco in quanto ID e non class */
     justify-content: center;
 }
 
+/* nav */
+
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #cafdff;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 16px;
+}
+
+.logo {
+    width: 300px;
+}
+
 .section-description {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-img-wrapper {
-    width: 40%;
-}
-
 .section-description-wrapper {
     width: 60%;
+}
+
+.section-description-para {
+    font-size: 20px;
+    line-height: 1.5; /* spazio tra le righe x 1.5 */
+    margin-bottom: 24px;
+
 }
 
 .about-img-wrapper,
@@ -123,12 +100,45 @@ footer { /* asterisco in quanto ID e non class */
     padding: 0 24px;
 }
 
+/* Header */
 
-.section-description-para {
-    font-size: 20px;
-    line-height: 1.5; /* spazio tra le righe x 1.5 */
-    margin-bottom: 24px;
+header {
+    background-color: #eadcff;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px); /* altrimenti 100% più il 70px che c'era nel nav avrebbe fatto la sezione più lunga del dovuto, appena scrollo anche di un solo pixel voglio vedere spuntare subito la sezione successiva.  */
+}
 
+.subheader {
+    font-size: 36px;
+    margin: 16px 0 24px 0;
+}
+
+/* About */
+
+#about {
+    background-color: #f8ffdc;
+}
+
+.about-img-wrapper {
+    width: 40%;
+}
+
+/* Discord */
+
+#discord {
+    background-color: #cefeff;
+}
+
+/* Contact */
+
+#contact {
+    background-color: #dce9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form {
