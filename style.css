@@ -147,6 +147,7 @@ form {
     flex-direction: column; /* in modo che ogni elemento occupi un intera riga */
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea {
@@ -175,4 +176,72 @@ footer {
 
 .footer__link {
     padding: 0 16px;
+}
+
+/* Responsiveness */
+
+/* Tablet e smartphone grandi */
+@media (max-width: 728px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .home_description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home_description_button {
+        max-width: 240px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .subheader {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    ul {
+        display: none; /* fa sparire la unordered list se si arriva nella risoluzione designata */
+    }
+
+    .section-description {
+        flex-direction: column;
+    }
+
+    .section-description-wrapper {
+        width: 100%;
+    }
+
+    .about-img-wrapper {
+        width: 100%;
+    }
+
+    #discord .section-description {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        padding: 48px;
+    }
+
+    .footer__logo {
+        max-width: 360px;
+    }
+
+    .footer__links {
+        margin-bottom: 24px;
+    }
+
+    .footer__link {
+        padding: 0 8px;
+        font-size: 18px;
+    }
+
 }
